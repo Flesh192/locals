@@ -15,7 +15,6 @@ class PostController extends Controller
         $order = $request->getOrder();
         $key = request()->fingerprint().$order;
         $data = Cache::get($key);
-        $data = null;
         if ($data === null) {
             //$userId = Auth::user()->id
             //to simplify I will use current user id = 1
