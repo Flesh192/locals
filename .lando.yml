@@ -7,4 +7,3 @@ config:
   database: mysql
   cache: redis
   xdebug: true
-  config:
